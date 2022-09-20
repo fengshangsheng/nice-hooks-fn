@@ -1,6 +1,6 @@
 {
   "name": "nice-hooks-fn",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,7 +18,7 @@
     "url": "https://github.com/fengshangsheng/nice-hooks-fn/issues"
   },
   "files": [
-    "./dist"
+    "dist"
   ],
   "homepage": "https://github.com/fengshangsheng/nice-hooks-fn#readme",
   "devDependencies": {
