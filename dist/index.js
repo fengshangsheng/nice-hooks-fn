@@ -65,6 +65,11 @@ function useIntersectionObserver(ref) {
     return isView;
 }
 
+var useIntersectionObserver$1 = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    'default': useIntersectionObserver
+});
+
 function usePages(props) {
     const { pageIdx, pageSize, allList } = props;
     const pageCount = Math.ceil(allList.length / pageSize);
@@ -82,9 +87,9 @@ function usePages(props) {
     return list;
 }
 
-var index = {
-    useIntersectionObserver,
-    usePages
-};
+var usePages$1 = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    'default': usePages
+});
 
-export { index as default };
+export { useIntersectionObserver$1 as useIntersectionObserver, usePages$1 as usePages };

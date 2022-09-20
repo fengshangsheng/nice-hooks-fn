@@ -1,2 +1,2 @@
 import { MutableRefObject } from "react";
-export default function useIntersectionObserver(ref: MutableRefObject<HTMLElement>): boolean;
+export default function useIntersectionObserver(ref: MutableRefObject<HTMLElement | undefined>): boolean;

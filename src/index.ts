@@ -1,7 +1,2 @@
-import useIntersectionObserver from "./useIntersectionObserver";
-import usePages from "./usePages";
-
-export default {
-  useIntersectionObserver,
-  usePages
-}
+export * as useIntersectionObserver from "./useIntersectionObserver";
+export * as usePages from "./usePages";

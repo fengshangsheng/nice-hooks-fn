@@ -3,7 +3,7 @@ import getScrollTop from "./utils/scrollTop";
 import antiShake from "./utils/antiShake";
 
 // 当前元素是否处于窗口视图内
-export default function useIntersectionObserver(ref: MutableRefObject<HTMLElement>) {
+export default function useIntersectionObserver(ref: MutableRefObject<HTMLElement | undefined>) {
   const [isView, triggerView] = useState(false);
 
   useEffect(() => {
@@ -11,8 +11,8 @@ export default function useIntersectionObserver(ref: MutableRefObject<HTMLElemen
       const scrollTop = getScrollTop();
       const viewH = document.body.clientHeight;
 
-      const eleTop = getParentOffsetTop(ref.current);
-      const eleH = ref.current.offsetHeight;
+      const eleTop = getParentOffsetTop(ref.current as HTMLElement);
+      const eleH = (ref.current as HTMLElement).offsetHeight;
 
       const bool = (
         (scrollTop < eleTop && (scrollTop + viewH) > eleTop) // 头区间
