@@ -1,8 +1,9 @@
 {
   "name": "nice-hooks-fn",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "npx rollup --config rollup.config.js"
   },
