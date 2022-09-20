@@ -1,2 +1,3 @@
-export * as useIntersectionObserver from "./useIntersectionObserver";
-export * as usePages from "./usePages";
+import useIntersectionObserver from "./useIntersectionObserver";
+import usePages from "./usePages";
+export { useIntersectionObserver, usePages };
