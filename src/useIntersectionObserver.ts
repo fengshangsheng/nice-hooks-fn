@@ -35,7 +35,7 @@ export default function useIntersectionObserver(ref: MutableRefObject<HTMLElemen
       return top;
     }
 
-    const borderTop = parseInt(getComputedStyle(dom, 'border-top- width').getPropertyValue('border-top-width'));
+    const borderTop = parseInt(getComputedStyle(dom, 'border-top-width').getPropertyValue('border-top-width'));
     top += dom.offsetTop + borderTop;
 
     return getParentOffsetTop(dom.offsetParent as HTMLElement, top);
